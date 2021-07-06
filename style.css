@@ -19,7 +19,7 @@ body {
 
 h1, h2, h3 {
     font-family: 'JetBrains Mono', monospace;
-    color: #333;
+    color: #364f6b;
 }
 
 img {
@@ -35,7 +35,29 @@ img {
 }
 
 .hero {
+    position: relative;
     padding: 100px 0;
+}
+
+.hero::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('img/dot.png');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    opacity: 0.2;
+}
+
+.hero-row, .about-row {
+    align-items: center;
+}
+
+.hero-left {
+    padding-right: 50px;
 }
 
 .hero h1 {
@@ -55,10 +77,11 @@ img {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
-    font-weight: 400;
+    font-weight: 500;
     color: #364f6b;
+    margin: 30px 0 20px;
 }
 
 a {
@@ -67,8 +90,129 @@ a {
     font-weight: 500;
     margin-top: 30px;
     display: inline-block;
-    padding: 12px 20px;
+    padding: 15px 25px;
     background: linear-gradient(45deg, #fc5185, #b152a5);
     color: #fff;
     border-radius: 30px;
+}
+
+.hero-right {
+    text-align: right;
+}
+
+.hero-right img {
+    width: 85%;
+    border-bottom-right-radius: 300px;
+    border-bottom-left-radius: 220px;
+}
+
+/* About */
+
+.about {
+    background-image: url('img/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0 0;
+    margin-top: 100px;
+}
+
+.about-left img {
+    width: 70%;
+}
+
+.about-right h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 12px 0;
+}
+
+/* Recipie */
+
+.recipie {
+    padding: 100px 0;
+}
+
+.recipie-row {
+    justify-content: space-between;
+}
+
+.col-3 {
+    width: 26%;
+}
+
+.recipie-top {
+    width: 50%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.recipie-top h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 12px 0;
+}
+
+.recipie-item {
+    box-shadow: 0px 0px 10px 5px #efefef;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.recipie-item h2 {
+    margin-top: 30px;
+}
+
+.recipie-item p {
+    margin: 10px 0;
+}
+
+/* App */
+
+.app {
+    background:  #fc5185;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+.app-row {
+    align-items: center;
+}
+
+.app-left h2 {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 12px 0;
+    color: #f0f0f0;
+}
+
+.app-left p {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.app-left img {
+    width: 200px;
+}
+
+/* Footer */
+
+.footer {
+    padding: 100px 0;
+    background: #364f6b;
+}
+
+.footer h2 {
+    color: #efefef;
+    text-align: center;
+}
+
+.footer p {
+    color: #efefef;
+    text-align: center;
+}
+
+.footer h2 span {
+    color: #fc5185;
 }
