@@ -66,6 +66,7 @@ img {
     font-size: 48px;
     font-weight: 900;
     margin: 12px 0;
+    line-height: 48px;
 }
 
 .hero h1 span {
@@ -75,7 +76,8 @@ img {
 .hero h2 {
     font-size: 25px;
     font-weight: 900;
-    margin: 12px 0;
+    margin: 25px 0;
+    line-height: 25px;
 }
 
 p {
@@ -103,7 +105,7 @@ a {
 }
 
 .hero-right img {
-    width: 85%;
+    width: 90%;
     border-bottom-right-radius: 300px;
     border-bottom-left-radius: 220px;
 }
@@ -127,6 +129,7 @@ a {
     font-size: 48px;
     font-weight: 900;
     margin: 12px 0;
+    line-height: 48px;
 }
 
 /* Recipie */
@@ -217,4 +220,112 @@ a {
 
 .footer h2 span {
     color: #fc5185;
+}
+
+
+@media all and (max-width: 992px) {
+    .hero {
+        padding: 80px 0 20px;
+    }
+    .hero-row, .about-row {
+        align-items: flex-start;
+    }
+    .hero-right img {
+        width: 100%;
+    }
+    a {
+        margin-top: 20px;
+    }
+    .recipie {
+        padding: 80px 0;
+    }
+    .recipie-top {
+        width: 80%;
+        margin: 0px auto 60px;
+    }
+    .recipie-item {
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .col-3 {
+        width: 28%;
+    }
+    .recipie-item h2 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .recipie-item p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .app {
+        padding: 80px 0;
+        margin-top: 50px;
+    }
+    .app-left h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .app-left p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .app-left img {
+        width: 150px;
+    }
+    .footer {
+        padding: 50px 0;
+    }
+    .footer p {
+        margin: 10px 0;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col {
+        width: 100%;
+    }
+    .hero-left {
+        padding-right: 0;
+        order: 1;
+    }
+    .hero-right {
+        text-align: center;
+    }
+    .hero-right img {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .about {
+        padding: 100px 0 100px;
+    }
+    .about-left {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .col-3 {
+        width: 80%;
+        margin: 0 auto 50px;
+    }
+    .recipie-item {
+        padding: 20px 20px 50px;
+        border-radius: 40px;
+    }
+    
+    .recipie-item h2 {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    
+    .recipie-item p {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .app-left {
+        order: 1;
+        margin-bottom: 50px;
+    }
 }
